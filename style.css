@@ -19,7 +19,7 @@ nav {
     width: 100%;
     top: 0;
     background: rgba(0,0,0,0.7);
-    padding: 15px;
+    padding: 20px;
     text-align: center;
     backdrop-filter: blur(8px);
 }
@@ -38,7 +38,7 @@ nav a:hover {
 /* LOGO FIXED */
 .fixed-logo {
     position: fixed;
-    top: 15px;
+    top: 0px;
     left: 20px;
     z-index: 1000;
 }
@@ -60,7 +60,7 @@ nav {
 }
 /* HERO */
 .hero {
-    height: 100vh;
+    height: 50vh;
     background: linear-gradient(135deg, #1f3c88, #2a5298);
     color: white;
     display: flex;
@@ -120,4 +120,43 @@ footer {
 
 @keyframes fadeIn {
     to { opacity: 1; }
+}
+/* SLIDER */
+.slider {
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.slides img {
+    width: 50%;
+    flex-shrink: 0;
+    border-radius: 15px;
+}
+
+/* BUTTON */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+.prev:hover, .next:hover {
+    background: rgba(0,0,0,0.8);
 }
