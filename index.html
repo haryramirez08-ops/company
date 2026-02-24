@@ -3,86 +3,80 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PT SRIDADI BERDIRI DIKAWANIN</title>
+<title>PT PROJECT EKOSISTEM SRIDADI</title>
 
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-<div class="fixed-logo">
-    <img src="logo.png" alt="Logo Perusahaan">
-</div>
-
-<nav>
-    <div class="menu">
-        <a href="#tentang">Tentang</a>
-        <a href="#layanan">Layanan</a>
-        <a href="#kontak">Kontak</a>
+<header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo">
+        <span>PT PROJECT EKOSISTEM SRIDADI</span>
     </div>
-</nav>
 
-<div class="hero">
-    <h1>PT SRIDADI BERDIRI DIKAWANIN</h1>
-    <p>SOLUSI UNTUK PERTANIAN ANDA</p>
-</div>
-
-<section id="tentang">
-    <div class="card">
-        <h2>Tentang Kami</h2>
-        <p>Kami bergerak di bidang Pertanian, Perkebunan, dan solusi Penjualan Hasil Tani/Kebun.</p>
-		
-		 <!-- SLIDER FOTO -->
-        <div class="slider">
-            <div class="slides">
-                <img src="foto1.jpg" alt="Foto 1">
-                <img src="foto2.jpg" alt="Foto 2">
-            </div>
-
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-        </div>
-
-    </div>
-</section>
-    </div>
-</section>
-
-<section id="layanan">
-    <div class="card">
-        <h2>Layanan</h2>
+    <nav>
         <ul>
-            <li>KONSULTASI PEMBIBITAN</li>
-            <li>KONSULTASI PEMUPUKAN</li>
-            <li>KEAMANAN JUAL BELI HASIL TANI</li>
-            <li>INFORMASI HARGA PASAR</li>
+            <li><a href="#home" data-id="nav_home">Beranda</a></li>
+            <li><a href="#about" data-id="nav_about">Tentang</a></li>
+            <li><a href="#services" data-id="nav_services">Layanan</a></li>
+            <li><a href="#contact" data-id="nav_contact">Kontak</a></li>
         </ul>
+    </nav>
+
+    <div class="lang-switch">
+        <button onclick="setLanguage('id')">ID</button>
+        <button onclick="setLanguage('jp')">JP</button>
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="video-wrapper">
+    <video id="heroVideo" autoplay muted loop playsinline>
+        <source src="assets/hero.mp4" type="video/mp4">
+    </video>
+
+    <button id="soundToggle" class="sound-btn">🔊</button>
+</div>
+
+    <div class="hero-content">
+        <h1 data-id="hero_title">Pertanian Berkelanjutan untuk Masa Depan</h1>
+        <p data-id="hero_sub">Membangun Ekosistem Hijau & Produktif</p>
     </div>
 </section>
-<section id="Konsultasi Pembibitan">
-    <div class="card">
-        <h2>Pemupukan</h2>
-        <ul>
-            <p>Pemupukan adalah proses pemberian unsur hara ke tanah atau tanaman untuk memenuhi kebutuhan nutrisi sehingga tanaman dapat tumbuh optimal, sehat, dan produktif. Unsur hara utama yang dibutuhkan tanaman meliputi nitrogen (N), fosfor (P), dan kalium (K), serta unsur mikro seperti magnesium, kalsium, dan boron.
-			<p>
-			<p>Pemupukan dapat dilakukan melalui tanah (pupuk tabur/kocor) atau melalui daun (pupuk semprot). Tujuannya adalah meningkatkan pertumbuhan vegetatif, pembungaan, pembuahan, serta hasil panen. Pemupukan yang tepat harus memperhatikan dosis, waktu aplikasi, jenis pupuk, dan kondisi tanah agar efisien dan tidak merusak lingkungan.
-			<p>
-		</ul>
+
+<!-- ABOUT -->
+<section class="section reveal" id="about">
+    <h2 data-id="about_title">Tentang Kami</h2>
+    <p data-id="about_text">
+        PT PROJECT EKOSISTEM SRIDADI bergerak di bidang pertanian dan perkebunan berkelanjutan dengan fokus pada inovasi, kualitas, dan kelestarian lingkungan.
+    </p>
+</section>
+
+<!-- SERVICES -->
+<section class="section reveal" id="services">
+    <h2 data-id="services_title">Layanan Kami</h2>
+    <div class="cards">
+        <div class="card">Manajemen Perkebunan</div>
+        <div class="card">Pertanian Modern</div>
+        <div class="card">Sustainability Program</div>
     </div>
 </section>
-<section id="kontak">
-    <div class="card">
-        <h2>Kontak</h2>
-        <p>Email: PTSBD@dakkaruan.co.id</p>
-        <p>Telp: 0813-6730-8353</p>
-        <p>Alamat: Jl. Senami RT 008 SRIDADI Kec. Muara Bulian</p>
-    </div>
+
+<!-- CONTACT -->
+<section class="section reveal" id="contact">
+    <h2 data-id="contact_title">Hubungi Kami</h2>
+    <p>Email: info@sridadiekosistem.com</p>
+	<p>Whatsapp: 0813-6730-8353<p>
+	<p>Instagram: Pt.Project Ecosystem Sridadi<p>
 </section>
 
 <footer>
-    © 2026 PT SRIDADI BERDIRI DIKAWANIN
+    <p>© 2026 PT PROJECT EKOSISTEM SRIDADI</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
