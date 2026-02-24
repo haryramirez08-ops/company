@@ -35,7 +35,36 @@ nav a {
 nav a:hover {
     color: #00f2fe;
 }
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 30px;
+    backdrop-filter: blur(8px);
+}
 
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #00f2fe;
+}
 /* HERO */
 .hero {
     height: 100vh;
